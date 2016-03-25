@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Groundnut';
+	src: url('Groundnut.otf');
+}
+#header h1{
+	text-align: center; 
+	margin: 0 auto 0 auto;
+	font-size: 45px;
+	font-family: 'Groundnut';
+}
+#header h2{
+	text-align: center; 
+	margin: 20 auto 20 auto;
+	font-size: 25px;
+	font-family: 'Groundnut';
+}
+#content {
+	position: relative;
+}
+#content img {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+#content form {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    top: 42%;
+    left: 8%;
+    width: 36%;
+}
+
+.playagainbutton {
+	font-family: 'Groundnut';
+	font-size: 16px;
+	height: 50px;
+	width: 150px;
+	background-color: white;
+	color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	text-align: center;
+	transition-duration: 0.4s; 
+	cursor: pointer; 
+}
+
+.playagainbutton:hover {
+	background-color: #555555; 
+	color: white;
+}
+
+#formelement {
+    width: 100%;
+    font-size: 2vw;
+}
+
+#formelement2 {
+    width: 100%;
+    font-family: 'Groundnut';
+    font-size: 2vw;
+    height: auto;
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+#formelement2:hover {
+	background-color: #000;
+	color: #ffffff;
+}
