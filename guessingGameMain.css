@@ -1,22 +1,30 @@
 @font-face {
-	font-family: 'Groundnut';
-	src: url('Groundnut.otf');
+	font-family: 'Peanuts';
+	src: url('PEANUTS_.TTF');
 }
+@font-face {
+	font-family: 'Dupuy';
+	src: url('Dupuy.ttf');
+}
+
 #header h1{
 	text-align: center; 
 	margin: 0 auto 0 auto;
 	font-size: 45px;
-	font-family: 'Groundnut';
+	font-family: 'Peanuts';
 }
+
 #header h2{
 	text-align: center; 
 	margin: 20 auto 20 auto;
 	font-size: 25px;
-	font-family: 'Groundnut';
+	font-family: 'Peanuts';
 }
+
 #content {
 	position: relative;
 }
+
 #content img {
 	position: relative;
 	z-index: 1;
@@ -32,8 +40,50 @@
     width: 36%;
 }
 
-.playagainbutton {
-	font-family: 'Groundnut';
+#fail {
+	display: none;
+	width: 100%;
+}
+#success {
+	display: none;
+	width: 100%;
+}
+
+p {
+	font-family: 'Peanuts', 'Dupuy';
+	font-size: 2vw;
+	text-align: center; 
+	position: absolute;
+    z-index: 2;
+    display: block;
+    top: 22%;
+    left: 42%;
+    width: 23%;
+}
+
+#guess {
+    width: 100%;
+    font-size: 2vw;
+}
+
+#submit {
+    width: 100%;
+    font-family: 'Peanuts';
+    font-size: 2vw;
+    height: auto;
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+#submit:hover {
+	background-color: #000;
+	color: #ffffff;
+}
+
+#hint {
+	font-family: 'Peanuts';
 	font-size: 16px;
 	height: 50px;
 	width: 150px;
@@ -47,28 +97,27 @@
 	cursor: pointer; 
 }
 
-.playagainbutton:hover {
+#hint:hover {
 	background-color: #555555; 
 	color: white;
 }
 
-#formelement {
-    width: 100%;
-    font-size: 2vw;
+#again {
+	font-family: 'Peanuts';
+	font-size: 16px;
+	height: 50px;
+	width: 150px;
+	background-color: white;
+	color: black;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	text-align: center;
+	transition-duration: 0.4s; 
+	cursor: pointer; 
 }
 
-#formelement2 {
-    width: 100%;
-    font-family: 'Groundnut';
-    font-size: 2vw;
-    height: auto;
-    border: 1px black solid;
-    border-radius: 3px;
-    background-color: #eeeeee;
-    transition: background-color .2s linear, color .2s linear;
-}
-
-#formelement2:hover {
-	background-color: #000;
-	color: #ffffff;
+#again:hover {
+	background-color: #555555; 
+	color: white;
 }

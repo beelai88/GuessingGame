@@ -6,6 +6,8 @@
 	<title>Can you guess the number?</title>
 	<link rel="stylesheet" type="text/css" href="guessingGameMain.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="jquery-1.12.2.min.js"></script>
+	<script src="guessingGame.js"></script>
 </head>
 
 <body class='container outline'>
@@ -18,20 +20,21 @@
 	<section id="content">
 		<img src="images/snoopymerged.jpg"/>
 		<form>
-			<input type="text" placeholder="Enter a number between 1 and 100" id='formElement'><br>
-			<input type="submit" value="Tell Snoopy!" id='formElement2'>
+			<input id="guess" type="text" name="guess" placeholder="Enter a number between 1 and 100" ><br>
+			<button id="submit" class="button-default" >Tell Snoopy</button>
 		</form>
 	</section>
-
-<!-- "hot/cold" indicator will pop up in Snoopy's speech bubble-->
+		<img id = "fail" src="images/rainingsnoopy.gif"/>
+		<img id = "success" src="images/dancingsnoopy2.gif"/>
+		<p></p>
 
 	<div class="container">
 		<div class='row'>
 			<div class='col-md-6 text-center'>
-				<button class='playagainbutton'>Play again!</button>
+				<button type="button" id='hint' class='button-default'>Ask for a Hint!</button>
 			</div>
 			<div class='col-md-6 text-center'>
-				<button class='playagainbutton'>Ask for a Hint!</button>
+				<button type="button" id='again' class='button-default'>Play again!</button>
 			</div>
 		</div>
 	</div>
